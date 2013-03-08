@@ -30,7 +30,7 @@ Right now, it returns 127.0.0.2 if there's any matches:
 ```bash
 [root@desktop andrew]# host 2.0.0.127.rbl.iheardyouliek.com
 2.0.0.127.rbl.iheardyouliek.com has address 127.0.0.2
-````
+```
 
 And the offending lists are served as TXT DNS records:
 
