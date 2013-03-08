@@ -2,6 +2,7 @@ var dns = require('dns'),
     db = require('./list.json'),
     nDNS = require('native-dns'),
     server = nDNS.createServer(),
+    winston = require('winston'),
     async = require('async');
 /*
 function queryRBL(callback) {
