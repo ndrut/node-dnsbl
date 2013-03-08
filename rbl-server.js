@@ -4,32 +4,14 @@ var dns = require('dns'),
     server = nDNS.createServer(),
     winston = require('winston'),
     async = require('async');
-/*
-function queryRBL(callback) {
-async.each(db, host, function (err) {
-  if (err) {  
-    console.log(err); 
-  }
-  else {
-    callback();
-  }
+
+var log = new (winston.Logger)({
+    transports: [
+        new (winston.transports.Console)({ timestamp: true, colorize: true }),
+        new (winston.transports.File)({ filename: './access.log', timestamp: true })
+    ]
 });
-}
-function host(rbl, callback) {
-    dns.resolve4(ip + rbl.dns, function (err, domain) {
-    if(err) {
-        callback(null);
-    }
-    else {
-        response.answer.push(nDNS.A({
-            name: request.question[0].name,
-            address: '127.0.0.1'
-        }));
-        callback(null);
-    }
-    });
-}
-*/
+
 server.on('request', function (request, response) {
     var ip = request.question[0].name.replace('rbl.iheardyouliek.com', '');
     async.each(db, function (rbl, callback) {
