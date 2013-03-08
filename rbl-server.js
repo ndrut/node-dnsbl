@@ -43,6 +43,7 @@ server.on('request', function (request, response) {
             response.send();
         }
     });
+    log.info(request.address.address + '\t' + request.question[0].name);
 });
 
 server.on('error', function ( err, buff, req, res) {
