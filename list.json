@@ -1,0 +1,51 @@
+[
+{ 
+    "name": "Website Welcome",
+    "dns": "rbl.websitewelcome.com",
+    "site": "Hostgator.com"
+},
+{
+    "name": "Barracuda",
+    "dns": "b.barracudacentral.org",
+    "site": "http://www.barracudacentral.org/rbl/removal-request"
+},
+{
+    "name": "SpamCop",
+    "dns": "bl.spamcop.net"
+    
+},
+{
+    "name": "njabl.org",
+    "dns": "dnsbl.njabl.org"
+},
+{
+    "name": "Sorbs Aggregate Zone",
+    "dns": "dnsbl.sorbs.net"
+},
+{
+    "name": "Sorbs spam.dnsbl Zone",
+    "dns": "spam.dnsbl.sorbs.net"
+},
+{
+    "name": "Composite Blocking List",
+    "dns": "cbl.abuseat.org"
+},
+{
+    "name": "SpamHaus Zen",
+    "dns": "zen.spamhaus.org"
+},
+{
+    "name": "Multi SURBL",
+    "dns": "multi.surbl.org"
+},
+{
+    "name": "Spam Cannibal",
+    "dns": "bl.spamcannibal.org",
+    "site": "http://www.spamcannibal.org/cannibal.cgi"
+},
+{
+    "name": "dnsbl.abuse.ch",
+    "dns": "spam.abuse.ch",
+    "site": "http://dnsbl.abuse.ch/"
+}
+]
