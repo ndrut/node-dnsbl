@@ -43,7 +43,7 @@ server.on('request', function (request, response) {
                     address: '127.0.0.2',
                     ttl: 300,
                 }));
-                response.answer.push(nDNS.CNAME({
+                response.additional.push(nDNS.TXT({
                     name: request.question[0].name,
                     data: rbl.dns,
                     ttl: 300,
