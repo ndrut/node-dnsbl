@@ -20,7 +20,6 @@ server.on('request', function (request, response) {
                 callback(null);
             }
             else {
-                console.log(rbl.dns);
                 response.answer.push(nDNS.A({
                     name: request.question[0].name,
                     address: '127.0.0.2',
