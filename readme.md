@@ -26,14 +26,16 @@ Listens on 53 by default, I recommend using forever to keep it alive. I've hard 
 
 Right now, it returns 127.0.0.2 if there's any matches:
 
-```
+
+```bash
 [root@desktop andrew]# host 2.0.0.127.rbl.iheardyouliek.com
 2.0.0.127.rbl.iheardyouliek.com has address 127.0.0.2
 ````
+
 And the offending lists are served as TXT DNS records:
 
 
-```
+```bash
 [root@desktop andrew]# dig txt 2.0.0.127.rbl.iheardyouliek.com +short
 "cbl.abuseat.org"
 "multi.surbl.org"
