@@ -46,3 +46,22 @@ And the offending lists are served as TXT DNS records:
 "spam.dnsbl.sorbs.net"
 "dnsbl.sorbs.net"
 ```
+
+### Supported RBL's:
+* [Barracuda](http://www.barracudacentral.org/rbl) - b.barracudacentral.org (Requires sign-up)
+* [Spamcop](http://spamcop.net) - bl.spamcop.net
+* [Not just another block list](http://njabl.org) - dnsbl.njabl.org
+* [Sorbs](http://sorbs.net) - dnsbl.sorbs.net (Aggregate Zone)
+* [Sorbs](http://sorbs.net) - spam.dnsbl.sorbs.net (Spam specific)
+* [Composite Blocking List](http://cbl.abuseat.org/) - cbl.abuseat.org
+* [Spamhaus](http://spamhaus.org) - zen.spamhaus.org
+* [Multi SURBL](http://surbl.org) - multi.surbl.org
+* [Spam Cannibal](http://www.spamcannibal.org) - bl.spamcannibal.org
+* [Swiss Security - Abuse.ch](http://www.abuse.ch) - spam.abuse.ch
+
+
+
+
+## TODO
+* [Server] Config file to support other rbl's
+* [Server] Figure out why each request has two packets, resulting in two log entries.
