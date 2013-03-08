@@ -35,7 +35,13 @@ server.on('request', function (request, response) {
         });
     },
     function (err) {
-        response.send();
+        if(response.answer.length < 1) {
+            response.header.rcode = nDNS.consts.NAME_TO_RCODE.NOTFOUND;
+            response.send();
+        }
+        else {
+            response.send();
+        }
     });
 });
 
