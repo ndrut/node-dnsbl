@@ -80,7 +80,12 @@ server.on('request', function (request, response) {
 });
 
 server.on('error', function ( err, buff, req, res) {
-    console.log(err);
+    log.error('DNS' + err);
 });
+
+redisClient.on('error', function (err) {
+    log.error('REDIS: ' + err);
+});
+
 
 server.serve(53);
