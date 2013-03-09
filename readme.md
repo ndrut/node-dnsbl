@@ -39,7 +39,7 @@ And the offending lists are served as TXT DNS records:
 * bl.spamcannibal.org - [Spam Cannibal](http://www.spamcannibal.org)
 * spam.abuse.ch - [Swiss Security - Abuse.ch](http://www.abuse.ch)
 * ubl.unsubscore.com - [The Unsubscribe Blacklist(UBL)](http://www.lashback.com/blacklist/)
-
+* dnsbl-3.uceprotect.net - [UCEPROTECT Network](http://www.uceprotect.net/en)
 
 
 ## TODO
