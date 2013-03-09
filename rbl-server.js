@@ -24,24 +24,10 @@ server.on('request', function (request, response) {
                response.send();
             }
             else {
-                response.answer.push(nDNS.A({
-                    name: request.question[0].name,
-                    address: '127.0.0.2',
-                    ttl: 300,
-                }));
-                response.additional.push(nDNS.TXT({
-                    name: request.question[0].name,
-                    data: rbl.dns,
-                    ttl: 300,
-                }));
-                callback(null);
-            }
-        });
-    },
-    function (err) {
-        if(response.answer.length < 1) {
-            response.header.rcode = nDNS.consts.NAME_TO_RCODE.NOTFOUND;
+            response.answer = data.answer;
+            response.additional = data.additional;
             response.send();
+            }
         }
         else {
             response.send();
