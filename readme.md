@@ -28,17 +28,17 @@ And the offending lists are served as TXT DNS records:
 ```
 
 ### Supported RBL's:
-* [Barracuda](http://www.barracudacentral.org/rbl) - b.barracudacentral.org (Requires sign-up)
-* [Spamcop](http://spamcop.net) - bl.spamcop.net
-* [Not just another block list](http://njabl.org) - dnsbl.njabl.org
-* [Sorbs](http://sorbs.net) - dnsbl.sorbs.net (Aggregate Zone)
-* [Sorbs](http://sorbs.net) - spam.dnsbl.sorbs.net (Spam specific)
-* [Composite Blocking List](http://cbl.abuseat.org/) - cbl.abuseat.org
-* [Spamhaus](http://spamhaus.org) - zen.spamhaus.org
-* [Multi SURBL](http://surbl.org) - multi.surbl.org
-* [Spam Cannibal](http://www.spamcannibal.org) - bl.spamcannibal.org
-* [Swiss Security - Abuse.ch](http://www.abuse.ch) - spam.abuse.ch
-
+* b.barracudacentral.org - [Barracuda](http://www.barracudacentral.org/rbl) - (Requires sign-up)
+* bl.spamcop.net - [Spamcop](http://spamcop.net)
+* dnsbl.njabl.org - [Not just another block list](http://njabl.org)
+* dnsbl.sorbs.net - Sorbs](http://sorbs.net) (Aggregate Zone)
+* spam.dnsbl.sorbs.net - [Sorbs](http://sorbs.net) (Spam specific)
+* cbl.abuseat.org - [Composite Blocking List](http://cbl.abuseat.org/)
+* zen.spamhaus.org - [Spamhaus](http://spamhaus.org)
+* multi.surbl.org - [Multi SURBL](http://surbl.org)
+* bl.spamcannibal.org - [Spam Cannibal](http://www.spamcannibal.org)
+* spam.abuse.ch - [Swiss Security - Abuse.ch](http://www.abuse.ch)
+* ubl.unsubscore.com - [The Unsubscribe Blacklist(UBL)](http://www.lashback.com/blacklist/)
 
 
 
