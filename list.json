@@ -53,5 +53,10 @@
         "name": "The Unsubscribe Blacklist(UBL)",
         "dns": "ubl.unsubscore.com ",
         "site": "http://www.lashback.com/blacklist/"
+    },
+    {
+        "name": "UCEPROTECT Network",
+        "dns": "dnsbl-1.uceprotect.net",
+        "site": "http://www.uceprotect.net/en"
     }
 ]
