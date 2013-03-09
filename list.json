@@ -27,7 +27,7 @@
     {
         "name": "Composite Blocking List",
         "dns": "cbl.abuseat.org",
-        "site: "http://www.abuseat.org"
+        "site": "http://www.abuseat.org"
     },
     {
         "name": "SpamHaus Zen",
