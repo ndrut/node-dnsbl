@@ -16,11 +16,12 @@ var log = new (winston.Logger)({
 });
 
 server.on('request', function (request, response) {
-    var ip = request.question[0].name.replace('rbl.iheardyouliek.com', '');
-    async.each(db, function (rbl, callback) {
-        dns.resolve4(ip + rbl.dns, function (err, domain) {
-            if(err) {
-                callback(null);
+    redisClient.get(request.question[0].name, function (err, data) {
+        if(data) {
+            data = JSON.parse(data);
+            if(data.answer.length < 1) {
+               response.header.rcode = nDNS.consts.NAME_TO_RCODE.NOTFOUND;
+               response.send();
             }
             else {
                 response.answer.push(nDNS.A({
