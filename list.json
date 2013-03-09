@@ -47,5 +47,10 @@
     "name": "dnsbl.abuse.ch",
     "dns": "spam.abuse.ch",
     "site": "http://dnsbl.abuse.ch/"
+},
+{
+    "name": "The Unsubscribe Blacklist(UBL)",
+    "dns": "ubl.unsubscore.com ",
+    "site": "http://www.lashback.com/blacklist/"
 }
 ]
