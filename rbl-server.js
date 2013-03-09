@@ -3,7 +3,10 @@ var dns = require('dns'),
     nDNS = require('native-dns'),
     server = nDNS.createServer(),
     winston = require('winston'),
+    redis = require("redis"),
     async = require('async');
+
+redisClient = redis.createClient();
 
 var log = new (winston.Logger)({
     transports: [
