@@ -2,17 +2,26 @@
 
 ### Server (rbl-server.js):
 
-Listens on 53 by default, I recommend using forever to keep it alive. I've hard coded it to use rbl.iheardyouliek.com, you'll need to update that to use your own.
+Update the values in config.json:
 
-Right now, it returns 127.0.0.2 if there's any matches:
+```JSON
+{
+    "listenHost": "0.0.0.0",                // Listening host
+    "listenPort": "53",                     // Listening port (DNS requests default to port UDP 53)
+    "hostBase": "rbl.iheardyouliek.com",    // The base hostname requests will be prepended to.
+    "standardResponse": "127.0.0.2",        // The response returned when there's a match.
+    "logfile": "./access.log"               // Path to the file used for logging.
 
+}
+```
+
+
+####Example output:
 
 ```bash
 [root@desktop andrew]# host 2.0.0.127.rbl.iheardyouliek.com
 2.0.0.127.rbl.iheardyouliek.com has address 127.0.0.2
 ```
-
-And the offending lists are served as TXT DNS records:
 
 
 ```bash
