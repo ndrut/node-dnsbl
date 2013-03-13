@@ -1,10 +1,12 @@
-var dns = require('dns'),
-    db = require('./list.json'),
-    nDNS = require('native-dns'),
-    server = nDNS.createServer(),
-    winston = require('winston'),
-    redis = require("redis"),
-    async = require('async');
+var dns = require('dns')
+    , db = require('./list.json')
+    , nDNS = require('native-dns')
+    , server = nDNS.createServer()
+    , winston = require('winston')
+    , redis = require("redis")
+    , config = require("./config.json")
+    , async = require('async')
+    ;
 
 redisClient = redis.createClient();
 
