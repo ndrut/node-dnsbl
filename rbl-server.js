@@ -13,7 +13,7 @@ redisClient = redis.createClient();
 var log = new (winston.Logger)({
     transports: [
         new (winston.transports.Console)({ timestamp: true, colorize: true }),
-        new (winston.transports.File)({ filename: './access.log', timestamp: true })
+        new (winston.transports.File)({ filename: config.logfile, timestamp: true })
     ]
 });
 
