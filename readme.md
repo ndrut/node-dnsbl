@@ -43,7 +43,6 @@ And the offending lists are served as TXT DNS records:
 
 
 ## TODO
-* [Server] Config file to support other rbl's
 * [Server] Figure out why each request has two packets, resulting in two log entries.
 
 
