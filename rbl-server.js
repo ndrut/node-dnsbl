@@ -90,4 +90,4 @@ redisClient.on('error', function (err) {
 });
 
 
-server.serve(53);
+server.serve(config.listenPort, config.listenHost);
