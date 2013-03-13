@@ -1,4 +1,6 @@
 {
+    "listenHost": "0.0.0.0",
+    "listenPort": "53", 
     "hostBase": "rbl.iheardyouliek.com",
     "standardResponse": "127.0.0.2",
     "logfile": "./access.log"
