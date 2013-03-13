@@ -41,7 +41,7 @@ server.on('request', function (request, response) {
                     else {
                         response.answer.push(nDNS.A({
                             name: request.question[0].name,
-                            address: '127.0.0.2',
+                            address: config.standardResponse,
                             ttl: 300,
                         }));
                         response.additional.push(nDNS.TXT({
