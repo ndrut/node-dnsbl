@@ -32,7 +32,7 @@ server.on('request', function (request, response) {
             }
         }
         else {
-            ip = request.question[0].name.replace('rbl.iheardyouliek.com', '');
+            ip = request.question[0].name.replace(config.hostBase, '');
             async.each(db, function (rbl, callback) {
                 dns.resolve(ip + rbl.dns, function (err, domain) {
                     if(err) {
