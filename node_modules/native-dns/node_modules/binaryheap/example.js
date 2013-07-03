@@ -7,8 +7,9 @@ a.forEach(function (k) {
   heap.insert({ value: k }, k);
 });
 
-heap.print();
+heap.print(process.stdout);
 
 while (heap.length) {
   console.log('popping', heap.pop().value);
+  heap.print(process.stdout);
 }
