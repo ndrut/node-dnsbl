@@ -39,7 +39,6 @@ Update the values in config.json:
 ### Supported RBL's:
 * b.barracudacentral.org - [Barracuda](http://www.barracudacentral.org/rbl) - (Requires sign-up)
 * bl.spamcop.net - [Spamcop](http://spamcop.net)
-* dnsbl.njabl.org - [Not just another block list](http://njabl.org)
 * dnsbl.sorbs.net - Sorbs](http://sorbs.net) (Aggregate Zone)
 * spam.dnsbl.sorbs.net - [Sorbs](http://sorbs.net) (Spam specific)
 * cbl.abuseat.org - [Composite Blocking List](http://cbl.abuseat.org/)
