@@ -10,11 +10,6 @@
         "site": "http://spamcop.net" 
     },
     {
-        "name": "Not Just Another Blacklist",
-        "dns": "dnsbl.njabl.org",
-        "site": "http://njabl.org"
-    },
-    {
         "name": "Sorbs Aggregate Zone",
         "dns": "dnsbl.sorbs.net",
         "site": "http://dnsbl.sorbs.net/"
